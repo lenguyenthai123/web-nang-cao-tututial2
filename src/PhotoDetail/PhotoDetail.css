@@ -1,0 +1,87 @@
+.photo-detail {
+  text-align: center;
+  padding: 20px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #3498db;
+  font-size: 16px;
+}
+
+.photo-detail-content {
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.photo-detail-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.photo-author {
+}
+
+.author-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Make the image circular */
+  margin-right: 0.5rem; /* Space between image and text */
+}
+
+.author-text {
+  display: flex;
+  margin: 0px;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+
+  font-size: 1rem; /* Ensure the text is readable */
+}
+
+.photo-author1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  padding: 0.5rem; /* p-2 */
+  height: auto;
+  width: auto; /* Ensure the width is the same as the parent */
+  color: black;
+  font-size: 1rem; /* Ensure the text is readable */
+}
+
+.author-img1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Make the image circular */
+  margin-right: 0.5rem; /* Space between image and text */
+}
+
+.author-text1 {
+  display: flex;
+  margin: 0px;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+
+  font-size: 1rem; /* Ensure the text is readable */
+}
