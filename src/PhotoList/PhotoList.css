@@ -23,6 +23,7 @@
 }
 
 .photo-author {
+  margin: 0px;
   display: flex;
   align-items: center; /* Center items vertically */
   padding: 0.5rem; /* p-2 */
