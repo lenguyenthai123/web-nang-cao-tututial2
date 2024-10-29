@@ -115,7 +115,7 @@ function App() {
             }
           />
           {/* Đường dẫn cho trang chi tiết ảnh */}
-          <Route path="/photos/:id" element={<PhotoDetail />} />
+          <Route path="/photos/:slugId" element={<PhotoDetail />} />
         </Routes>
       </div>
     </Router>

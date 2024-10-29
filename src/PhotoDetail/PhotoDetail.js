@@ -3,7 +3,8 @@ import { useParams, Link } from "react-router-dom";
 import "./PhotoDetail.css";
 
 function PhotoDetail() {
-  const { id } = useParams(); // Lấy id từ URL
+  const { slugId } = useParams(); // Lấy id từ URL
+  const id = slugId.split("-").pop(); // Lấy id từ slugId
   const [photo, setPhoto] = useState(null); // State để lưu trữ ảnh chi tiết
   const [loading, setLoading] = useState(true); // State để theo dõi trạng thái tải dữ liệu từ API
   const [imageLoading, setImageLoading] = useState(true); // State để theo dõi trạng thái tải ảnh đầy đủ
@@ -19,6 +20,7 @@ function PhotoDetail() {
         setLoading(true); // Đặt trạng thái loading khi bắt đầu fetch
         setImageLoading(true); // Đặt trạng thái để hiển thị spinner khi ảnh đang tải
 
+        //console.log("id", id);
         const response = await fetch(
           `https://api.unsplash.com/photos/${id}?client_id=${accessKey}`
         );
@@ -37,7 +39,7 @@ function PhotoDetail() {
     };
 
     fetchPhoto(); // Gọi hàm fetch khi component được mount
-  }, [id, accessKey]); // Chạy lại effect khi id hoặc accessKey thay đổi
+  }, [slugId, accessKey]); // Chạy lại effect khi id hoặc accessKey thay đổi
 
   // Hàm xử lý khi ảnh đầy đủ đã tải xong
   const handleImageLoad = () => {

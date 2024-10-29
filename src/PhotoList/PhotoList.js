@@ -20,7 +20,7 @@ function PhotoList({ photos }) {
     >
       {/* Duyệt qua danh sách ảnh và hiển thị từng ảnh */}
       {photos.map((photo) => (
-        <Link key={photo.id} to={`/photos/${photo.id}`} className="photo-item">
+        <Link key={photo.id} to={`/photos/${photo.slug}-${photo.id}`} className="photo-item">
           {/* Ảnh thu nhỏ của từng photo */}
           <img
             src={photo.urls.small} // URL ảnh nhỏ
